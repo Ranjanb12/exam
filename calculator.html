@@ -1,0 +1,51 @@
+<html>
+<head>
+<script type="text/javascript">
+function add()
+{
+var num1,num2,sum;
+num1=Number(document.getElementById("Num1").value);
+num2=Number(document.getElementById("Num2").value);
+sum=num1+num2;
+document.getElementById("Result").value=sum;
+}
+function sub()
+{
+var num1,num2,sum;
+num1=Number(document.getElementById("Num1").value);
+num2=Number(document.getElementById("Num2").value);
+sum=num1-num2;
+document.getElementById("Result").value=sum;
+}
+
+}
+function reset()
+{
+document.getElementById("Num1").value=" ";
+document.getElementById("Num2").value=" ";
+document.getElementById("Result").value="";
+
+}
+</script>
+
+</head>
+<body>
+
+
+  <label for="Num1"> Num1: </label> 
+<input id="Num1" name="Num1" ><br/></br>
+
+ <label for="Num2"> Num2:</label>
+<input type="text" id="Num2" name="Num2" ><br/></br>
+
+<input type="button" onclick="add()" value="+"/>
+<button onclick="sub()" >-</button>
+
+<button onclick="reset()" >C</button><br/></br>
+
+ <label for="Result"> Result:</label>
+<input id="Result" ><br/></br>
+
+
+</body>
+</html>
